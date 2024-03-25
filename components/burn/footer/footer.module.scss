@@ -1,0 +1,137 @@
+@import '@/styles/variables.scss';
+
+.section {
+	position: relative;
+	width: 100%;
+	height: 480px;
+	z-index: 3;
+
+	margin-top: -200px;
+}
+
+.fire1 {
+	position: relative;
+	width: 100%;
+	height: 541px;
+	margin-top: -40px;
+
+	z-index: 5;
+
+	background: url('../../../public/design/fireStripe.svg');
+	background-size: cover;
+}
+
+.fire1 .inside {
+	position: relative;
+	width: 90%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.fire1 .inside .title {
+	position: relative;
+
+	padding-top: 250px;
+
+	text-align: center;
+
+	color: $color-white;
+	font-family: $font1;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%;
+
+	z-index: 4;
+}
+
+.fire1 .inside .desc {
+	position: relative;
+
+	margin-top: 20px;
+
+	text-align: center;
+
+	color: $color-white;
+	font-family: $font1;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%;
+
+	z-index: 4;
+
+	.desktop {
+		display: block;
+	}
+
+	.mobile {
+		display: none;
+	}
+
+	transition: opacity $animation1;
+}
+
+.fire1 .inside .desc:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.fire1 .inside .twitterX {
+	position: absolute;
+	left: 0px;
+	bottom: -20px;
+	width: 48px;
+	height: auto;
+
+	z-index: 5;
+
+	transition: opacity $animation1;
+}
+
+.fire1 .inside .twitterX:hover {
+	opacity: 0.8;
+}
+
+// RWD
+@media (max-width: 1100px) {
+	.fire1 .inside .title {
+		font-size: 24px;
+	}
+
+	.fire1 .inside .desc {
+		margin-top: 0px;
+		font-size: 42px;
+	}
+
+	.fire1 .inside .twitterX {
+		left: 50%;
+		translate: -50% 0;
+		bottom: -90px;
+	}
+
+	.fire1 .inside .desc {
+		.desktop {
+			display: none;
+		}
+
+		.mobile {
+			display: block;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.fire1 .inside .title {
+		padding-top: 220px;
+	}
+
+	.fire1 .inside .desc {
+		margin-top: 0px;
+		font-size: 38px;
+	}
+
+	.section {
+		height: 440px;
+	}
+}

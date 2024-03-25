@@ -1,0 +1,62 @@
+@import '@/styles/variables.scss';
+
+.section {
+	position: relative;
+	width: 100%;
+	z-index: 4;
+}
+
+.section .inside {
+	position: relative;
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.inside .left {
+	position: relative;
+	width: 160px;
+	height: auto;
+	margin-top: 40px;
+
+	transition: opacity $animation1;
+}
+
+.inside .right {
+	position: relative;
+	margin-top: 40px;
+}
+
+.inside .right .btn {
+	position: relative;
+	width: 285px;
+	height: 65px;
+
+	background: url('../../../public/design/longFireBtn.svg');
+	background-size: cover;
+
+	p {
+		font-size: 20px;
+		//margin-top: 12px;
+	}
+}
+
+// RWD
+@media (max-width: 550px) {
+	.section .inside {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.inside .left {
+		margin-top: 30px;
+	}
+
+	.inside .right {
+		margin-top: 10px;
+	}
+}

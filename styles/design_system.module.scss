@@ -1,0 +1,19 @@
+@import './variables.scss';
+
+.fireBtn {
+	p {
+		color: $color-white;
+		font-family: $font1;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 100%;
+
+		padding-top: 10px;
+	}
+
+	transition: opacity $animation1;
+}
+
+.fireBtn:hover {
+	opacity: 0.8;
+}

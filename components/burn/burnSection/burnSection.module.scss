@@ -1,0 +1,209 @@
+@import '@/styles/variables.scss';
+
+.section {
+	position: relative;
+	width: 100%;
+	z-index: 4;
+
+	margin-top: 100px;
+}
+
+.section .inside {
+	position: relative;
+	width: 90%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.inside .shadowAAARight {
+	position: absolute;
+	left: 50%;
+	top: 240px;
+
+	translate: -50% 0;
+
+	width: 2200px;
+	height: auto;
+
+	transform: rotate(-5deg);
+
+	z-index: -1;
+}
+
+.inside .title {
+	position: relative;
+
+	margin-top: 120px;
+
+	text-align: center;
+
+	color: $color-white;
+	font-family: $font1;
+	font-size: 148px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%;
+
+	z-index: 4;
+}
+
+.inside .burnKermit {
+	position: relative;
+	width: 100%;
+	max-width: 865px;
+	height: auto;
+
+	margin: 0 auto;
+	margin-top: -150px;
+
+	z-index: 3;
+}
+
+.inside .burnKermit .burnKermitAAA {
+	position: absolute;
+
+	left: 50%;
+	bottom: -50px;
+	translate: -50% 0;
+
+	width: 3135px;
+	height: auto;
+
+	transform: rotate(4deg);
+
+	z-index: 1;
+}
+
+.inside .burnBox {
+	position: relative;
+	width: 100%;
+	max-width: 700px;
+
+	margin: 0 auto;
+	margin-top: -100px;
+
+	padding: 0px 75px;
+	padding-top: 120px;
+	padding-bottom: 100px;
+
+	z-index: 3;
+
+	background: url('../../../public/design/burnBox.png');
+	background-size: 100% 100%;
+}
+
+.inside .burnBox .burnInput {
+	position: relative;
+
+	width: 100%;
+	height: 110px;
+
+	padding: 0px 40px;
+
+	background: url('../../../public/design/inputBg.png');
+	background-size: 100% 100%;
+}
+
+.inside .burnBox .burnInput input {
+	color: $color-white;
+	font-family: $font1;
+	font-size: 57px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+
+	margin-right: 16px;
+
+	margin-top: 15px;
+
+	text-transform: uppercase;
+}
+
+.inside .burnBox .burnInput .endAdornment {
+	color: $color-white;
+	font-family: $font1;
+	font-size: 33px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+
+	margin-top: 5px;
+
+	text-transform: uppercase;
+}
+
+.inside .burnBox .burnBtn {
+	position: relative;
+	width: 320px;
+	height: 110px;
+
+	margin: 0 auto;
+	display: flex;
+
+	margin-top: 40px;
+
+	background: url('../../../public/design/burnBtn.png');
+	background-size: 100% 100%;
+
+	p {
+		font-size: 57px;
+		margin-top: -8px;
+	}
+}
+
+// RWD
+@media (max-width: 900px) {
+	.inside .title {
+		font-size: 100px;
+	}
+}
+
+@media (max-width: 630px) {
+	.inside .title {
+		font-size: 80px;
+	}
+
+	.inside .burnBox .burnInput input {
+		font-size: 42px;
+	}
+
+	.inside .burnBox .burnInput .endAdornment {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 500px) {
+	.inside .title {
+		font-size: 58px;
+	}
+
+	.inside .burnBox {
+		padding: 72px 32px;
+	}
+
+	.inside .burnBox .burnInput {
+		width: 100%;
+		height: 80px;
+
+		padding: 0px 24px;
+	}
+
+	.inside .burnBox .burnBtn {
+		width: 200px;
+		height: 80px;
+
+		margin-top: 20px;
+
+		p {
+			font-size: 32px;
+		}
+	}
+
+	.inside .burnBox .burnInput input {
+		margin-top: 7px;
+	}
+
+	.inside .burnBox .burnInput .endAdornment {
+		margin-top: 5px;
+	}
+}
