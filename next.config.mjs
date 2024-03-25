@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   output: "export",
-  basePath: "/kermit-front",
+  //basePath: "/kermit-front",
   images: {
     unoptimized: true,
   }
