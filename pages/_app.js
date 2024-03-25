@@ -15,6 +15,8 @@ import '@/styles/variables.scss';
 import '@/styles/fonts.css';
 import '@/styles/globals.scss';
 
+import NoSSR from 'react-no-ssr';
+ 
 // >> Script
 function MyApp({ Component, pageProps }) {
 	// >> Variables
@@ -32,9 +34,9 @@ function MyApp({ Component, pageProps }) {
 
 	// >> Render
 	return (
+		<NoSSR>
 		<StyledEngineProvider injectFirst>
 			<CssBaseline />
-
 			<WalletWrapper>
 				<Toaster
 					position="top-center"
@@ -52,6 +54,7 @@ function MyApp({ Component, pageProps }) {
 
 			<div className="pageLoader" data-visible={loaded}></div>
 		</StyledEngineProvider>
+		</NoSSR>
 	);
 }
 

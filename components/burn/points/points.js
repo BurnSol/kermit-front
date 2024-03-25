@@ -24,7 +24,7 @@ export default function Points(props) {
 				</div>
 				<div className={styles.insidePoint} data-value="point1">
 					<Typography>
-						Deposit your $sol tokens, recive powerful $burn in
+						Deposit your $sol tokens, receive powerful $burn in
 						return
 					</Typography>
 				</div>
